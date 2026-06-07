@@ -1,0 +1,17 @@
+module tb_NOT_Gate;
+
+reg A;
+wire Y;
+
+NOT_Gate uut(
+    .A(A),
+    .Y(Y)
+);
+
+initial begin
+    A=0;
+    #10 A=1;
+    #10 $finish;
+end
+
+endmodule
